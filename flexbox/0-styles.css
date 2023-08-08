@@ -183,22 +183,27 @@ b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-s
   
   /* Grid
       ============================= */
+    .row {
+  display: flex;
+}
+
   
   ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
+    display:flex;
   }
   
-  .row::after {
+  /* .row::after {
     content: '';
     display: table;
     clear: both;
-  }
+  } */
   
-  [class*='col-'] {
+  /* [class*='col-'] {
     float: left;
-    padding: 0.5rem;
+    padding: 0.5rem; */
   }
   
   .col-1-3 {
