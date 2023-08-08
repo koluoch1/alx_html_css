@@ -384,32 +384,38 @@ b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-s
   }
   
   /*** 4. CARD ***/
-  
-  /* Card (all styles)
-      ============================= */
-  
-  .card-category {
-    color: var(--color-primary);
-  }
-  
-  /* Card WORK
-      ============================= */
-  
-  .card-work .card-outer {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .card-work:hover .card-outer {
-    transform: scale(0.95);
-  }
-  
-  .card-work .card-image img {
-    height: 30rem;
-    width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-  }
+
+/* Section Latest news ============================= */
+.section-latest-news .row {
+  flex-direction: row-reverse;
+}
+
+/* Card (all styles)
+   ============================= */
+
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Card WORK
+   ============================= */
+
+.card-work .card-outer {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+}
+
+.card-work .card-image img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
   
   .card-work:hover .card-image {
     transform: scale(1.2);
