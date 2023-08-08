@@ -182,29 +182,29 @@ b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-s
   }
   
   /* Grid
-      ============================= */
-    .row {
+   ============================= */
+
+/* Remove the .row::after declaration */
+/* .row::after {
+  content: '';
+  display: table;
+  clear: both;
+} */
+
+/* Add display: flex to .row class */
+.row {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-  
-  ul.row {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display:flex;
-  }
-  
-  /* .row::after {
-    content: '';
-    display: table;
-    clear: both;
-  } */
-  
-  /* [class*='col-'] {
-    float: left;
-    padding: 0.5rem; */
-  }
+/* Remove float: left from [class*='col-'] elements */
+[class*='col-'] {
+  /* Remove float: left */
+  padding: 0.5rem;
+}
+
   
   .col-1-3 {
     width: 33.33%;
